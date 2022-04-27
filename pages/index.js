@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from "@chakra-ui/react"
+import { Container, Box, Heading } from '@chakra-ui/react'
 
 const Page = () => {
   return (
@@ -7,16 +7,15 @@ const Page = () => {
         I am an aspiring front-end developer!
       </Box>
 
-      <Box display={{md:'flex'}}>
+      <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Majid Omid
           </Heading>
-          <p>Gamer / Developer</p>
+          <p>Gamer / Developer / Bicycle Riding Enthusiast</p>
         </Box>
       </Box>
     </Container>
-    
   )
 }
 
