@@ -1,4 +1,10 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue
+} from '@chakra-ui/react'
 
 const Page = () => {
   return (
@@ -13,6 +19,22 @@ const Page = () => {
             Majid Omid
           </Heading>
           <p>Gamer / Developer / Bicycle Riding Enthusiast</p>
+        </Box>
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          align="center"
+        >
+          <Image
+            display="inline-block"
+            borderRadius="full"
+            borderColor={useColorModeValue('purple', 'blue')}
+            borderStyle="dotted"
+            borderWidth={2}
+            src="/images/treeposecrop.jpg"
+            maxWidth="100px"
+          />
         </Box>
       </Box>
     </Container>

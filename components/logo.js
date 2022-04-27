@@ -5,7 +5,7 @@ import { FaBicycle } from 'react-icons/fa'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 23px;
   display: inline-flex;
   align-items: center;
   height: 30px;
@@ -37,7 +37,7 @@ const Logo = () => {
 
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M PLUS Rounded 1p"
+            fontFamily="M PLUS 1p"
             fontWeight="bold"
             ml={3}
           >
