@@ -5,11 +5,23 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
+import Paragraph from '../components/paragraph'
+import Section from '../components/section'
 
 const Page = () => {
   return (
-    <Container>
-      <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
+    <Container maxW="container.md">
+      <Box
+        borderRadius="lg"
+        borderWidth={1}
+        borderStyle="solid"
+        borderColor={useColorModeValue('black', '#303134')}
+        bg={useColorModeValue('#f0e7db', '#303134')}
+        p={3}
+        mb={6}
+        align="center"
+        cursor="default"
+      >
         I am an aspiring front-end developer!
       </Box>
 
@@ -24,6 +36,7 @@ const Page = () => {
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
+          mr={{ md: 3 }}
           align="center"
         >
           <Image
@@ -33,10 +46,22 @@ const Page = () => {
             borderStyle="dotted"
             borderWidth={2}
             src="/images/treeposecrop.jpg"
-            maxWidth="100px"
+            maxWidth="150px"
           />
         </Box>
       </Box>
+
+      <Section delay={0.2}>
+        <Heading as="h2" variant="section-title">
+          About Me
+        </Heading>
+        <Paragraph>
+          I just pulled up in a yankee bebody shlankeyy beboddy burr I just
+          pulled up in a yankee bebody shlankeyy beboddy burrI just pulled up in
+          a yankee bebody shlankeyy beboddy burrI just pulled up in a yankee
+          bebody shlankeyy beboddy burr
+        </Paragraph>
+      </Section>
     </Container>
   )
 }
